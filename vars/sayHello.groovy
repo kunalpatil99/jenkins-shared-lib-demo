@@ -1,4 +1,6 @@
-def call(String name = 'there') {
+import org.example.Helper
 
-  echo "Hello ${name}!"
+def call(String name = 'there'){
+  def upper = Helper.toUpper(name)
+  echo "Hello $(upper)"
 }
