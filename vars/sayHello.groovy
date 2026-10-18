@@ -1,6 +1,7 @@
 import org.example.Helper
 
 def call(String name = 'there'){
-  def upper = Helper.toUpper(name)
-  echo "Hello ${upper}"
+  def greeting = Helper.readGreeting()
+  def upperName = Helper.toUpper(name)
+  echo "${greeting} ${upperName}
 }
